@@ -47,4 +47,7 @@ export const adminAPI = {
   updateRole:   (id, role) => api.put(`/admin/users/${id}/role`, { role }),
   deleteUser:   (id) => api.delete(`/admin/users/${id}`),
 };
-export default api;
+const API = import.meta.env.VITE_API_URL;
+
+export default API;
+
